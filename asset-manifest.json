@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.7f37ca7a.css",
+    "main.js": "/website/static/js/main.c10a46a8.js",
+    "static/media/SAFWAN.jpg": "/website/static/media/SAFWAN.ca4c89f63af87f461122.jpg",
+    "index.html": "/website/index.html",
+    "main.7f37ca7a.css.map": "/website/static/css/main.7f37ca7a.css.map",
+    "main.c10a46a8.js.map": "/website/static/js/main.c10a46a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f37ca7a.css",
+    "static/js/main.c10a46a8.js"
+  ]
+}
