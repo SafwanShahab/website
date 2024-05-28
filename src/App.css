@@ -1,38 +1,239 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333; /* Dark grey text */
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
 .App {
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it is behind other content */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: #1e90ff; /* Light blue links */
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a:hover {
+  color: #00bfff; /* Lighter blue on hover */
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(to right, #1a2a4f, #0f1e3d); /* Dark blue gradient */
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar li {
+  margin: 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar li a {
+  display: block;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  padding: 100px 20px;
+  background: transparent;
+  color: #ffffff;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero-photo {
+  width: 200px;
+  height: 220px;
+  border-radius: 50%;
+  border: 5px solid #1e90ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section Styles */
+.about-section {
+  padding: 50px 20px;
+  background: #ffffff; /* Light grey background */
+  color: #333; /* Dark grey text */
+}
+
+.about-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.about-section a {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+/* Education & Skills Styles */
+.education-skills {
+  padding: 50px 20px;
+  background: #ffffff; /* Light grey background */
+  color: #333; /* Dark grey text */
+}
+
+.education-skills h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.education-skills .education-entry {
+  margin-bottom: 20px;
+}
+
+.education-skills .education-entry h3 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.education-skills .education-entry p {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+/* Experience & Projects Styles */
+.experience-projects {
+  padding: 50px 20px;
+  background: #ffffff; /* Light grey background */
+  color: #333; /* Dark grey text */
+}
+
+.experience-projects h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.experience-projects h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.experience-projects p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Extracurriculars & Interests Styles */
+.extracurriculars-interests {
+  padding: 50px 20px;
+  background: #ffffff; /* Light grey background */
+  color: #333; /* Dark grey text */
+}
+
+.extracurriculars-interests h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.extracurriculars-interests h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.extracurriculars-interests p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  padding: 50px 20px;
+  background: #ffffff; /* Light grey background */
+  color: #333; /* Dark grey text */
+}
+
+.contact-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px; /* Adjust margin for separate lines */
+}
+
+.contact-section a {
+  display: block; /* Ensure each link is on a separate line */
+  margin-bottom: 10px; /* Add space between links */
+}
+
+/* Footer Styles */
+.footer {
+  padding: 20px;
+  background: linear-gradient(to right, #1a2a4f, #243b55); /* Dark blue gradient */
+  color: #ffffff;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #1e90ff;
+  text-decoration: underline;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: #00bfff;
 }

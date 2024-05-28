@@ -1,0 +1,20 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../App.css';
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/education-skills">Education/Skills</Link></li>
+        <li><Link to="/experience-projects">Experience/Projects</Link></li>
+        <li><Link to="/extracurriculars-interests">Extracurriculars/Interests</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
